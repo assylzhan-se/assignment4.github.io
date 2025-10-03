@@ -1,10 +1,26 @@
-.box{
-    background-color: #28a745;
-    color: white;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+.box {
+  background-color: #007BFF;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
 }
